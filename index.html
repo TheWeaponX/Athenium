@@ -97,63 +97,38 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Louvre_Museum_Wikimedia_Commons.jpg" alt="Louvre">
     <div class="hero-text">
       <h2>Explore o Louvre em 3D</h2>
-      <button onclick="showMuseum('louvre')">Entrar no Tour 3D</button>
+      <button onclick="window.location.href='louvre.html'">Entrar no Tour 3D</button>
     </div>
   </section>
 
   <section class="section">
     <h3>Museus em Destaque</h3>
     <div class="grid">
-      <div class="card" onclick="showMuseum('louvre')">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Louvre_Museum_%2827128035747%29.jpg/960px-Louvre_Museum_%2827128035747%29.jpg" alt="Louvre">
-        <p>LOUVRE – PARIS</p>
+      <div class="card">
+        <a href="louvre.html">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Louvre_Museum_%2827128035747%29.jpg/960px-Louvre_Museum_%2827128035747%29.jpg" alt="Louvre">
+          <p>LOUVRE – PARIS</p>
+        </a>
       </div>
-      <div class="card" onclick="showMuseum('prado')">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/800px-Museo_del_Prado_2016_%2825185969599%29.jpg" alt="Prado">
-        <p>PRADO – MADRID</p>
+      <div class="card">
+        <a href="prado.html">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/800px-Museo_del_Prado_2016_%2825185969599%29.jpg" alt="Prado">
+          <p>PRADO – MADRID</p>
+        </a>
       </div>
-      <div class="card" onclick="showMuseum('met')">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg/1024px-Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg" alt="MET">
-        <p>MET – NOVA YORK</p>
+      <div class="card">
+        <a href="met.html">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg/1024px-Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg" alt="MET">
+          <p>MET – NOVA YORK</p>
+        </a>
       </div>
-      <div class="card" onclick="showMuseum('masp')">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Novo_MASP.jpg/800px-Novo_MASP.jpg" alt="MASP">
-        <p>MASP – SÃO PAULO</p>
+      <div class="card">
+        <a href="masp.html">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Novo_MASP.jpg/800px-Novo_MASP.jpg" alt="MASP">
+          <p>MASP – SÃO PAULO</p>
+        </a>
       </div>
     </div>
-  </section>
-
-  <!-- Seções dos Museus -->
-  <section id="louvre" class="museum-info active">
-    <h2>LOUVRE – PARIS</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Louvre_Museum_Wikimedia_Commons.jpg" alt="Museu do Louvre">
-    <p>O Museu do Louvre é um dos maiores e mais famosos museus de arte do mundo. Localizado em Paris, abriga obras icônicas como a Mona Lisa de Leonardo da Vinci e a Vênus de Milo.</p>
-    <p>Inaugurado em 1793, o Louvre possui mais de 35.000 obras em exposição, distribuídas em diversas coleções que abrangem desde a antiguidade até o século XIX.</p>
-    <button onclick="window.open('https://www.louvre.fr/visites-en-ligne/petitegalerie/saison1/#/petite_galerie_2/', '_self')">ACESSAR TOUR VIRTUAL</button>
-  </section>
-
-  <section id="prado" class="museum-info">
-    <h2>MUSEU DO PRADO – MADRID</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/800px-Museo_del_Prado_2016_%2825185969599%29.jpg" alt="Museu do Prado">
-    <p>O Museu do Prado, em Madrid, é um dos mais importantes museus de arte da Europa. Sua coleção inclui obras-primas de artistas como Velázquez, Goya, El Greco e Bosch.</p>
-    <p>Fundado em 1819, o Prado é conhecido por sua ampla coleção de pinturas espanholas, mas também abriga trabalhos significativos de escolas italianas e flamengas.</p>
-    <button onclick="alert('Fluxo de tour do Prado (wireframe)')">ACESSAR TOUR VIRTUAL</button>
-  </section>
-
-  <section id="met" class="museum-info">
-    <h2>THE MET – NOVA YORK</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg/1024px-Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg" alt="The Met">
-    <p>O Metropolitan Museum of Art, conhecido como MET, é o maior museu de arte dos Estados Unidos e um dos mais visitados do mundo.</p>
-    <p>Sua coleção inclui mais de dois milhões de obras que abrangem 5.000 anos de história da arte, com destaque para arte egípcia, armaduras medievais e pinturas europeias.</p>
-    <button onclick="alert('Fluxo de tour do MET (wireframe)')">ACESSAR TOUR VIRTUAL</button>
-  </section>
-
-  <section id="masp" class="museum-info">
-    <h2>MASP – SÃO PAULO</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Novo_MASP.jpg/800px-Novo_MASP.jpg" alt="MASP">
-    <p>O Museu de Arte de São Paulo (MASP) é um dos mais importantes museus de arte da América Latina, conhecido pelo prédio suspenso projetado por Lina Bo Bardi.</p>
-    <p>Sua coleção reúne mais de 11.000 obras, incluindo artistas europeus como Van Gogh e Renoir, além de importantes nomes brasileiros como Portinari e Tarsila do Amaral.</p>
-    <button onclick="alert('Fluxo de tour do MASP (wireframe)')">ACESSAR TOUR VIRTUAL</button>
   </section>
 
   <!-- Seção de Assinatura com Tabela Interativa -->
@@ -189,7 +164,7 @@
         </tr>
       </tbody>
     </table>
-    <button onclick="showMain()">VOLTAR</button>
+    <button onclick="hideMuseumInfo()">VOLTAR</button>
   </section>
 
   <section class="section premium">
@@ -217,17 +192,22 @@ function showMuseum(id) {
   }, 500);
 }
 
-function showMain() {
-  showMuseum('louvre');
+// Esconde a tabela de assinatura e volta ao modo "catálogo"
+function hideMuseumInfo() {
+  const museums = document.querySelectorAll('.museum-info');
+  museums.forEach(m => {
+    m.style.opacity = 0;
+    setTimeout(() => m.classList.remove('active'), 500);
+  });
 }
 
 function searchMuseum(event) {
   if(event.key === "Enter") {
     const value = event.target.value.toLowerCase();
-    if(value.includes("louvre")) showMuseum('louvre');
-    else if(value.includes("prado")) showMuseum('prado');
-    else if(value.includes("met")) showMuseum('met');
-    else if(value.includes("masp")) showMuseum('masp');
+    if(value.includes("louvre")) window.location.href = "louvre.html";
+    else if(value.includes("prado")) window.location.href = "prado.html";
+    else if(value.includes("met")) window.location.href = "met.html";
+    else if(value.includes("masp")) window.location.href = "masp.html";
     else alert("Museu não encontrado.");
     event.target.value = "";
   }
