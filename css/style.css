@@ -34,3 +34,17 @@ tbody tr:nth-child(even) { background:#1a1a1a; }
 td { font-family:'Montserrat', sans-serif; }
 footer { text-align:center; padding:1em; background:#1a1a1a; font-size:0.9em; color:#ccc; }
 a { text-decoration:none; color:inherit; }
+/* ... outros estilos ... */
+.card p { 
+  margin: 0.5em; 
+  font-family: 'Cinzel Decorative', serif; 
+  text-transform: uppercase; 
+}
+
+.card a,
+.card a:visited,
+.card a:hover {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
